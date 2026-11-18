@@ -1,0 +1,150 @@
+/* General Settings */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f4f6f9;
+    --text-color: #333333;
+    --card-color: #ffffff;
+    --main-color: #6c63ff;
+    --dark-bg: #1e1e2f;
+    --dark-text: #ffffff;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+/* Header */
+
+header {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* Main */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Home Section */
+
+#home {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: 25px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+/* Button */
+
+button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Dark Mode */
+
+body.dark {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark .card {
+    background-color: #333344;
+}
+
+body.dark nav {
+    background-color: #333344;
+}
+
+body.dark nav a {
+    color: white;
+}
+
+body.dark nav span {
+    color: white;
+}
